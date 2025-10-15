@@ -1,0 +1,352 @@
+[
+  {
+    "id": 1,
+    "name": "Auto Servis Novak d.o.o.",
+    "vat_id": "HR12345678901",
+    "email": "info@autoservisnovak.hr",
+    "phone": "+385 1 2345 678"
+  },
+  {
+    "id": 2,
+    "name": "Kavana Mediteran j.d.o.o.",
+    "vat_id": "HR23456789012",
+    "email": "kontakt@kavanamediteran.hr",
+    "phone": "+385 21 556 778"
+  },
+  {
+    "id": 3,
+    "name": "Obrt Luka i sin",
+    "vat_id": "HR34567890123",
+    "email": "luka@obrtiisin.hr",
+    "phone": "+385 91 234 5678"
+  },
+  {
+    "id": 4,
+    "name": "Građevinarstvo Kovač d.o.o.",
+    "vat_id": "HR45678901234",
+    "email": "ured@gradjevinarstvokovac.hr",
+    "phone": "+385 42 678 912"
+  },
+  {
+    "id": 5,
+    "name": "Turistička agencija Adria Tours",
+    "vat_id": "HR56789012345",
+    "email": "rezervacije@adriatours.hr",
+    "phone": "+385 51 777 999"
+  },
+  {
+    "id": 6,
+    "name": "Pekara Sunce d.o.o.",
+    "vat_id": "HR67890123456",
+    "email": "info@pekarasunce.hr",
+    "phone": "+385 1 777 2233"
+  },
+  {
+    "id": 7,
+    "name": "IT Studio Alfa j.d.o.o.",
+    "vat_id": "HR78901234567",
+    "email": "support@italfa.hr",
+    "phone": "+385 91 998 1122"
+  },
+  {
+    "id": 8,
+    "name": "Restoran Kod Mare",
+    "vat_id": "HR89012345678",
+    "email": "rezervacije@kodmare.hr",
+    "phone": "+385 98 334 556"
+  },
+  {
+    "id": 9,
+    "name": "Taxi Servis Zagreb",
+    "vat_id": "HR90123456789",
+    "email": "info@taxizagreb.hr",
+    "phone": "+385 91 777 8889"
+  },
+  {
+    "id": 10,
+    "name": "Cvjećarnica Mirisni Kutak",
+    "vat_id": "HR01234567890",
+    "email": "narudzbe@mirisnikutak.hr",
+    "phone": "+385 95 332 7788"
+  },
+  {
+    "id": 11,
+    "name": "Frizerski salon Bella",
+    "vat_id": "HR11223344556",
+    "email": "bella@frizerskibella.hr",
+    "phone": "+385 91 223 4455"
+  },
+  {
+    "id": 12,
+    "name": "Studio Dizajn.hr",
+    "vat_id": "HR22334455667",
+    "email": "kontakt@dizajn.hr",
+    "phone": "+385 1 3456 999"
+  },
+  {
+    "id": 13,
+    "name": "Servis Klima Expert",
+    "vat_id": "HR33445566778",
+    "email": "info@klimaexpert.hr",
+    "phone": "+385 91 908 7766"
+  },
+  {
+    "id": 14,
+    "name": "Apartmani Lavanda",
+    "vat_id": "HR44556677889",
+    "email": "booking@apartmanilavanda.hr",
+    "phone": "+385 99 445 6677"
+  },
+  {
+    "id": 15,
+    "name": "Usluge čišćenja Čistoća Plus",
+    "vat_id": "HR55667788990",
+    "email": "info@cistocaplus.hr",
+    "phone": "+385 98 888 2211"
+  },
+  {
+    "id": 16,
+    "name": "Elektro Montaža d.o.o.",
+    "vat_id": "HR66778899001",
+    "email": "ured@elektromontaza.hr",
+    "phone": "+385 1 772 3399"
+  },
+  {
+    "id": 17,
+    "name": "Obrt Kamen i Stil",
+    "vat_id": "HR77889900112",
+    "email": "kontakt@kamenistil.hr",
+    "phone": "+385 91 334 5566"
+  },
+  {
+    "id": 18,
+    "name": "Trgovina Zeleni Kutak",
+    "vat_id": "HR88990011223",
+    "email": "narudzbe@zelenikutak.hr",
+    "phone": "+385 98 455 6677"
+  },
+  {
+    "id": 19,
+    "name": "Autoškola Start",
+    "vat_id": "HR99001122334",
+    "email": "info@autoskolastart.hr",
+    "phone": "+385 91 700 4455"
+  },
+  {
+    "id": 20,
+    "name": "Servis računala Megabyte",
+    "vat_id": "HR10112233445",
+    "email": "servis@megabyte.hr",
+    "phone": "+385 99 445 2200"
+  },
+  {
+    "id": 21,
+    "name": "Tiskara PrintArt d.o.o.",
+    "vat_id": "HR11122233344",
+    "email": "info@printart.hr",
+    "phone": "+385 1 337 5544"
+  },
+  {
+    "id": 22,
+    "name": "Agencija za nekretnine Domus",
+    "vat_id": "HR22233344455",
+    "email": "ured@domus.hr",
+    "phone": "+385 91 447 8811"
+  },
+  {
+    "id": 23,
+    "name": "Auto Prijevoz Miletić",
+    "vat_id": "HR33344455566",
+    "email": "mile@autoprijevoz.hr",
+    "phone": "+385 91 332 4455"
+  },
+  {
+    "id": 24,
+    "name": "Knjižara Pismo",
+    "vat_id": "HR44455566677",
+    "email": "prodaja@knjizarapismo.hr",
+    "phone": "+385 1 337 8899"
+  },
+  {
+    "id": 25,
+    "name": "Servis bijele tehnike ElektroFix",
+    "vat_id": "HR55566677788",
+    "email": "servis@elektrofix.hr",
+    "phone": "+385 98 223 5566"
+  },
+  {
+    "id": 26,
+    "name": "Fitness centar Titan",
+    "vat_id": "HR66677788899",
+    "email": "info@titanfitness.hr",
+    "phone": "+385 91 776 4455"
+  },
+  {
+    "id": 27,
+    "name": "Kamenoklesarstvo Jurić",
+    "vat_id": "HR77788899900",
+    "email": "jurić@kamen.hr",
+    "phone": "+385 91 332 7788"
+  },
+  {
+    "id": 28,
+    "name": "Caffe bar Luna",
+    "vat_id": "HR88899900011",
+    "email": "kontakt@caffeluna.hr",
+    "phone": "+385 99 887 6655"
+  },
+  {
+    "id": 29,
+    "name": "Krojački salon Elegant",
+    "vat_id": "HR99900011122",
+    "email": "elegant@krojaci.hr",
+    "phone": "+385 91 330 7766"
+  },
+  {
+    "id": 30,
+    "name": "Servis mobitela SmartFix",
+    "vat_id": "HR00011122233",
+    "email": "info@smartfix.hr",
+    "phone": "+385 98 123 4567"
+  },
+  {
+    "id": 31,
+    "name": "Autoservis Turbo",
+    "vat_id": "HR11133355577",
+    "email": "turbo@autoservis.hr",
+    "phone": "+385 91 777 9900"
+  },
+  {
+    "id": 32,
+    "name": "Kamen Dizajn d.o.o.",
+    "vat_id": "HR12233445566",
+    "email": "info@kamendizajn.hr",
+    "phone": "+385 91 445 6677"
+  },
+  {
+    "id": 33,
+    "name": "Agro Servis Ivan",
+    "vat_id": "HR23344556677",
+    "email": "agro@servisivan.hr",
+    "phone": "+385 98 333 6655"
+  },
+  {
+    "id": 34,
+    "name": "Turistička kuća More",
+    "vat_id": "HR34455667788",
+    "email": "info@turistickakucamore.hr",
+    "phone": "+385 21 776 889"
+  },
+  {
+    "id": 35,
+    "name": "Hotel Park View",
+    "vat_id": "HR45566778899",
+    "email": "recepcija@hotelparkview.hr",
+    "phone": "+385 21 442 221"
+  },
+  {
+    "id": 36,
+    "name": "Knjigovodstvo Bilanca Plus",
+    "vat_id": "HR56677889900",
+    "email": "bilanca@bilancaplus.hr",
+    "phone": "+385 1 223 4456"
+  },
+  {
+    "id": 37,
+    "name": "Oprema za dom Lux Decor",
+    "vat_id": "HR67788990011",
+    "email": "prodaja@luxdecor.hr",
+    "phone": "+385 91 776 2233"
+  },
+  {
+    "id": 38,
+    "name": "Voćarna Fructa",
+    "vat_id": "HR78899001122",
+    "email": "info@fructa.hr",
+    "phone": "+385 91 554 8899"
+  },
+  {
+    "id": 39,
+    "name": "Obrt Stolarska radionica Marko",
+    "vat_id": "HR89900112233",
+    "email": "marko@stolarija.hr",
+    "phone": "+385 98 667 5544"
+  },
+  {
+    "id": 40,
+    "name": "Agencija Kreativni Kutak",
+    "vat_id": "HR90011223344",
+    "email": "info@kreativnikutak.hr",
+    "phone": "+385 91 224 1133"
+  },
+  {
+    "id": 41,
+    "name": "Udruga Mladi Talent",
+    "vat_id": "HR91122334455",
+    "email": "kontakt@mladitalent.hr",
+    "phone": "+385 1 334 5566"
+  },
+  {
+    "id": 42,
+    "name": "Foto Studio Fokus",
+    "vat_id": "HR92233445566",
+    "email": "studio@fokus.hr",
+    "phone": "+385 91 998 4455"
+  },
+  {
+    "id": 43,
+    "name": "Konditorska radionica Slatki zalogaj",
+    "vat_id": "HR93344556677",
+    "email": "info@slatkizalogaj.hr",
+    "phone": "+385 98 777 6622"
+  },
+  {
+    "id": 44,
+    "name": "Mala trgovina Vesna",
+    "vat_id": "HR94455667788",
+    "email": "vesna@malatrgovina.hr",
+    "phone": "+385 91 333 4455"
+  },
+  {
+    "id": 45,
+    "name": "Usluge knjigovodstva Arka",
+    "vat_id": "HR95566778899",
+    "email": "arka@knjigovodstvo.hr",
+    "phone": "+385 1 445 8899"
+  },
+  {
+    "id": 46,
+    "name": "Auto dijelovi Jukić",
+    "vat_id": "HR96677889900",
+    "email": "info@autodijelovijukic.hr",
+    "phone": "+385 98 778 1122"
+  },
+  {
+    "id": 47,
+    "name": "Zubarska ordinacija Dr. Kralj",
+    "vat_id": "HR97788990011",
+    "email": "ordinacija@drkralj.hr",
+    "phone": "+385 1 332 5544"
+  },
+  {
+    "id": 48,
+    "name": "Servis računala ByteFix",
+    "vat_id": "HR98899001122",
+    "email": "support@bytefix.hr",
+    "phone": "+385 99 667 7788"
+  },
+  {
+    "id": 49,
+    "name": "Turistička agencija Panorama",
+    "vat_id": "HR99910012233",
+    "email": "info@panoramatours.hr",
+    "phone": "+385 51 336 778"
+  },
+  {
+    "id": 50,
+    "name": "Kafić Stari Grad",
+    "vat_id": "HR10101010101",
+    "email": "rezervacije@starigrad.hr",
+    "phone": "+385 91 889 2233"
+  }
+]
