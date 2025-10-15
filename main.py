@@ -7,39 +7,35 @@ class Repository:
         pass
 
     def save(self, data):
-        pass
+        print('save() is working')
 
-    def get_all():
-        pass
+    def get_all(self):
+        try:
+            with open('./data_store/customers.json', 'r', encoding='utf-8') as file_reader:
+                return json.load(file_reader)
+        except Exception as ex:
+            print(f'{dt.now()} - Dogodila se greska {ex}!')
+            return []
 
     def get(self, id):
-        pass
+        print('get() is working')
 
     def update(self, data):
-        pass
+        print('update() is working')
 
     def delete(self, id):
-        pass
+        print('delete() is working')
 
 
+def main():
+    repo = Repository()
+
+    repo.save([])
+    repo.get_all()
+    repo.get(5)
+    repo.update([])
+    repo.delete(13)
 
 
-
-
-try:
-    with open('./data_store/customers.json', 'r', encoding='utf-8') as file_reader:
-        data = json.load(file_reader)
-
-        for dictionary in data:
-            print(dictionary['name'])
-except Exception as ex:
-    print(f'{dt.now()} - Dogodila se greska {ex}!')
-
-
-repo = Repository()
-
-repo.save(data)
-repo.get_all()
-repo.get(5)
-repo.update(data)
-repo.delete(13)
+if __name__ == '__main__':
+    main()
