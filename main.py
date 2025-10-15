@@ -2,7 +2,7 @@ import json
 from datetime import datetime as dt
 
 
-class Repo:
+class Repository:
     def __init__(self):
         pass
 
@@ -15,7 +15,7 @@ class Repo:
     def get(self, id):
         pass
 
-    def update(self, id):
+    def update(self, data):
         pass
 
     def delete(self, id):
@@ -36,10 +36,10 @@ except Exception as ex:
     print(f'{dt.now()} - Dogodila se greska {ex}!')
 
 
-repo = Repo()
+repo = Repository()
 
 repo.save(data)
 repo.get_all()
 repo.get(5)
-repo.update(9)
+repo.update(data)
 repo.delete(13)
