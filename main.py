@@ -1,6 +1,5 @@
 import json
 from datetime import datetime as dt
-import sys
 from typing import Dict, List
 
 
