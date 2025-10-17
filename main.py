@@ -14,11 +14,32 @@ from typing import Dict, List
 #region EMPLOYEE
 # klasa koja cuva podatke o djelatniku firme koja koristi ovu nasu aplikaciju
 class Employee:
-    def __init__(self):
-        pass
+    def __init__(self,
+                 first_name: str,
+                 last_name: str,
+                 username: str,
+                 password: str,
+                 job_description: str,
+                 format_full_name: str = 'FL',
+                 is_admin: bool = False):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.username = username
+        self.password = password
+        self.job_description = job_description
+        self.is_admin = is_admin
+        self.format_full_name = format_full_name
+        self.full_name = self._construct_full_name()
 
     def __str__(self):
-        return ''
+        return f'{self.full_name}'
+
+    def _construct_full_name(self):
+        if self.format_full_name == 'FL':
+            return f'{self.first_name} {self.last_name}'
+        else:
+            return f'{self.last_name} {self.first_name}'
+
 
 #endregion
 
