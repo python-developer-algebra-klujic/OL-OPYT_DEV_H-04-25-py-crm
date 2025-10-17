@@ -1,7 +1,28 @@
+'''
+... stari zahtjevi
+Novi zahtjev - dodati podatke o djelatnicima firme koja koristi CRM aplikaciju
+Djelatnik se treba prijaviti u aplikaciju. podaci se cuvaju u datoteci employees.json
+u kojoj mora biti prvi djelatnik Administrator s:
+    username - Admin
+    password - Pass4Admin
+'''
+
 import json
 from datetime import datetime as dt
 from typing import Dict, List
 
+#region EMPLOYEE
+# klasa koja cuva podatke o djelatniku firme koja koristi ovu nasu aplikaciju
+class Employee:
+    def __init__(self):
+        pass
+
+    def __str__(self):
+        return ''
+
+#endregion
+
+#region CUSTOMER
 
 class Customer:
     def __init__(self, id, name, vat_id, email, phone):
@@ -19,7 +40,7 @@ class Customer:
         return f'Puno ime: {self.name.capitalize()}'
 
 
-class Repository:
+class CustomerRepository:
     def __init__(self, file_path: str):
         # private property - sugerira da je samo za primjenu unutar klase
         self._file_path = file_path
@@ -67,6 +88,7 @@ class Repository:
             print(f'{dt.now()} - Dogodila se greska {ex}!')
             self._customers = []
 
+#endregion
 
 # Funkcija koja inicijalizira pocetne postavke nase aplikacije
 def app_init() -> Dict:
@@ -92,7 +114,7 @@ def main():
         # sys.exit()
         return
     else:
-        repo = Repository(app_config['file_path'])
+        repo = CustomerRepository(app_config['file_path'])
 
     # CRUD (Create, Read ili Retreive, Update, Delete) metode repozitorija
     # repo.save([])
