@@ -41,11 +41,64 @@ class Employee:
             return f'{self.last_name} {self.first_name}'
 
 class EmployeeRepository:
-    pass
+    def __init__(self, file_path):
+        pass
+
+    def _load_data(self, file_path: str):
+        pass
+
+    def save(self, employee: Employee):
+        pass
+
+    def get_by_username(self, username: str) -> Employee:
+        pass
+
+    def get_by_id(self, id: int) -> Employee:
+        pass
+
 
 # Klasa koja upravlja prijavom i odjavom korisnika u aplikaciji
-class AuthMAnager:
-    pass
+class AuthManager:
+    def __init__(self):
+        self.loggedin_user: Employee = None
+
+    def login(self, username: str, password: str) -> str:
+        """"username -> username ili email"""
+        # generirati simulaciju tokena
+        # Ako prode sve provjere dohvatiti iz liste
+        user_from_db = self.repo.get_by_username(username)
+        self.loggedin_user = user_from_db
+
+    def logout(self, token: str):
+        '''dodati algoritam'''
+        pass
+
+    def change_password(self, username: str, old_password: str, new_password: str):
+        # provjera postojeceg passworda
+        # user not found!!!
+        '''
+        ALGORITAM
+        0. Preskociti provjere jesu li passwordi '' i nije bitna duzina passworda
+        1. Provjera postoji li korisnik u bazi/employees.json koji ima isti username
+            kao i onaj naveden u argumentima metode
+        1.2. Ako ima -> provjeriti je li old_password OK
+        1.2.1.  Ako je ispravan -> trazimo dodatni unos novog passworda
+        1.2.1.1.    Ako je ispravan onda na objektu employee promjenimo pwd i pohranimo ga u store
+        1.2.1.2.    Ako nije ispravan -> pokusaj ponovno ili odustani
+        '''
+        # Samo ADmin moze mijenjati passworde sebi i drugima
+        if self.loggedin_user.is_admin:
+            user_from_db = self.repo.get_by_username(username)
+            if user_from_db != None:
+                if user_from_db.password == old_password:
+                    while True:
+                        # Dodatni unos novog passworda
+                        # Ako je OK promijeni
+                        user_from_db.password = new_password
+                        self.repo.save()
+        else:
+            return f'{self.loggedin_user.full_name}, nemate pravo mijenjati password!'
+
 
 #endregion
 
@@ -135,6 +188,8 @@ def main():
     # ucitamo postavke aplikacije u rjecnik
     app_config = app_init()
 
+
+
     # provjerimo je li bilo gresaka, odnosno ima li podataka pod kljucem error_message
     if app_config['error_message'] != '':
         print(app_config['error_message'])
@@ -142,6 +197,17 @@ def main():
         return
     else:
         repo = CustomerRepository(app_config['file_path'])
+        users_repo = EmployeeRepository(app_config['file_path'])
+        auth_manager = AuthManager(app_config['file_path'])
+
+
+    app_loggedin_user = None
+    if app_loggedin_user == None:
+        username = input('Upisite vas username: ')
+        password = input('Upisite vas password: ')
+        user = users_repo.get_by_username(username)
+
+        jwt_token = auth_manager.login(username, password)
 
     # CRUD (Create, Read ili Retreive, Update, Delete) metode repozitorija
     # repo.save([])
