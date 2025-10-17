@@ -20,7 +20,7 @@ class Employee:
                  username: str,
                  password: str,
                  job_description: str,
-                 format_full_name: str = 'FL',
+                 format_full_name: str = 'FL', # FL - Prikazi prvo First name pa Last name
                  is_admin: bool = False):
         self.first_name = first_name
         self.last_name = last_name
@@ -40,6 +40,12 @@ class Employee:
         else:
             return f'{self.last_name} {self.first_name}'
 
+class EmployeeRepository:
+    pass
+
+# Klasa koja upravlja prijavom i odjavom korisnika u aplikaciji
+class AuthMAnager:
+    pass
 
 #endregion
 
@@ -146,6 +152,9 @@ def main():
     customer_5 = repo.get(25)
     print(customer_5.phone)
     print(customer_5.full_name)
+    print()
+    employee = Employee('Pero', 'Peric', 'pperic', 'Pa$$w0rd!', 'CEO', 'FL', True)
+    print(employee)
     # repo.update([])
     # repo.delete(13)
 
