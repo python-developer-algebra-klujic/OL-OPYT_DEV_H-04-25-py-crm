@@ -6,13 +6,17 @@ from typing import Dict, List
 class Customer:
     def __init__(self, id, name, vat_id, email, phone):
         self.id = id
-        self.name = name
+        self.name: str = name
         self.vat_id = vat_id
         self.email = email
         self.phone = phone
+        self.full_name: str = self._get_full_name()
 
     def __str__(self):
         return f'({self.id})\t{self.name}'
+
+    def _get_full_name(self):
+        return f'Puno ime: {self.name.capitalize()}'
 
 
 class Repository:
@@ -20,7 +24,8 @@ class Repository:
         # private property - sugerira da je samo za primjenu unutar klase
         self._file_path = file_path
         # kod kreiranja objekta ucitaju se svi podaci i napuni se ovo svojstvo
-        self._customers = self._load_data()
+        self._customers = []
+        self._load_data()
 
     def save(self, data):
         print('save() is working')
@@ -52,16 +57,15 @@ class Repository:
     def _load_data(self):
         try:
             with open(self._file_path, 'r', encoding='utf-8') as file_reader:
-                customers = []
+                self._customers.clear()
                 # ucitamo listu rjecnika i konvertiramo ih u listu objekata klase Customer
                 data = json.load(file_reader)
                 for element in data:
                     customer = self._dict_to_customer(element)
-                    customers.append(customer)
-                return customers
+                    self._customers.append(customer)
         except Exception as ex:
             print(f'{dt.now()} - Dogodila se greska {ex}!')
-            return []
+            self._customers = []
 
 
 # Funkcija koja inicijalizira pocetne postavke nase aplikacije
@@ -98,6 +102,7 @@ def main():
     print()
     customer_5 = repo.get(25)
     print(customer_5.phone)
+    print(customer_5.full_name)
     # repo.update([])
     # repo.delete(13)
 
